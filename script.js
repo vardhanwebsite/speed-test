@@ -1,7 +1,7 @@
 const button= document.querySelector('button')
 
 const size=4316534 * 8
-const testcase=10;
+const testcase=2;
 const progress= document.querySelector('.progress ')
 const speedtext=document.querySelector('.speed-text')
 let test_res=[]
@@ -47,7 +47,7 @@ for(let i=0;i<testcase;i++){
  test_res.push(speed)
 
  progress.style.width=((i+1)/testcase * 100)+ '%'
- speedtext.innerText= getAvgSpeed().toFixed(2)+'Mbps'
+ speedtext.innerText= getAvgSpeed()+'Mbps'
 
 }
 
