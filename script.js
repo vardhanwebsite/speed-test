@@ -30,7 +30,7 @@ async function getLoadSpeed(){
     let loadTime=await loadImage()
     if(loadTime<1) loadTime=1
     let speed_bps = size/loadTime
-    let speed_kbps= speed_bps/10240
+    let speed_kbps= speed_bps/1024
     return  speed_kbps 
 }
 
@@ -47,7 +47,7 @@ for(let i=0;i<testcase;i++){
  test_res.push(speed)
 
  progress.style.width=((i+1)/testcase * 100)+ '%'
- speedtext.innerText= getAvgSpeed()+'Mbps'
+ speedtext.innerText= getAvgSpeed().toFixed(2)+'kbps'
 
 }
 
