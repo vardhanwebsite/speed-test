@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* html ,body{
+    
+} */
+
+
+ 
+  
+body{
+    font-family:'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:peachpuff;
+    padding: auto;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    
+    background-color:aqua;
+     height: 500px; 
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    
+ }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+  }
+
+
+  #head{
+    color: blue;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+ 
+  }
+/* 
+  .progress-bar{
+    height: 40px;
+    width: 80%;
+    background-color: rgb(172, 166, 166);
+    border-radius: 5px;
+   
+    margin-top: 70px;
+} */
+
+ 
+
+.progress-bar {
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    position: relative;
+    margin-top: 70px;
+
+    height: 40px;
+    width: 80%;
+  }
+
+
+   
+
+/* 
+.progress-bar .progress{
+    height: 100%;
+    width: 0%;
+    background-color:green;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px  grey;
+    transition: width 0.15s ;
+
+} */
+  
+  .progress {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px peachpuff;
+    border-radius: 100px;
+    background:peachpuff;
+    height: 100%;
+    width: 0;
+  }
+  
+
+.speed-text{
+   
+    text-align: center;
+    font-size: 3em;
+    font-weight:bolder;
+    color: blue;
+    margin-top: 70px;
+    
+}
+
+
+
+button{
+    border: none;
+    outline: none;
+    padding: 1em;
+    color:whitesmoke;
+    border-radius: 3px;
+    background-color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 60%;
+    text-align: center;
+    margin-top: 70px;
+
+}
+
+.button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1);
+}
+
+
+
+
+
+@media screen and (max-width: 493px) {
+
+
+   
+  #head{
+    color: blue;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+ 
+  }
+
+
+  
+.speed-text{
+   
+  text-align: center;
+  font-size: 2em;
+  font-weight:bolder;
+  color: blue;
+  margin-top: 50px;
+  
+}
+
+
+
+}
+
+
+@media screen and (max-width: 295px) {
+
+  #head{
+    color: blue;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+ 
+  }
+
+
+  
+.speed-text{
+   
+  text-align: center;
+  font-size: 1em;
+  font-weight:bolder;
+  color: blue;
+  margin-top: 50px;
+  
+}
+
+
+
+}
+
