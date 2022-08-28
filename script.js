@@ -9,7 +9,7 @@ let test_res=[]
 function  loadImage(){
     return new Promise((resolve ,reject) =>{
     let image = new Image()
-    image.src="intspeed.jpg?" + parseInt(Math.random() * 1000)
+    image.src="https://www.imgonline.com.ua/examples/random-pixels-big.png?" + parseInt(Math.random() * 1000)
     let startTime = Date.now()
 
  
