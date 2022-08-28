@@ -1,6 +1,6 @@
 const button= document.querySelector('button')
 
-const size=20480 *8
+const size=4316534*8
 const testcase=1000;
 const progress= document.querySelector('.progress ')
 const speedtext=document.querySelector('.speed-text')
@@ -30,7 +30,7 @@ async function getLoadSpeed(){
     let loadTime=await loadImage()
     if(loadTime<1) loadTime=1
     let speed_bps = size/loadTime
-    let speed_kbps= speed_bps/20480
+    let speed_kbps= speed_bps/1048576
 
     return  speed_kbps 
 }
