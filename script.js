@@ -1,6 +1,6 @@
 const button= document.querySelector('button')
 
-const size=4316534*8
+const size=4316534 * 8
 const testcase=1000;
 const progress= document.querySelector('.progress ')
 const speedtext=document.querySelector('.speed-text')
@@ -9,7 +9,7 @@ let test_res=[]
 function  loadImage(){
     return new Promise((resolve ,reject) =>{
     let image = new Image()
-    image.src="https://www.imgonline.com.ua/examples/random-pixels-big.png?" + parseInt(Math.random() * 2000)
+    image.src="intspeed.jpg?" + parseInt(Math.random() * 1000)
     let startTime = Date.now()
 
  
@@ -30,8 +30,7 @@ async function getLoadSpeed(){
     let loadTime=await loadImage()
     if(loadTime<1) loadTime=1
     let speed_bps = size/loadTime
-    let speed_kbps= speed_bps/1048576
-
+    let speed_kbps= speed_bps/102400
     return  speed_kbps 
 }
 
