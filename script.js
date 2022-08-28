@@ -1,7 +1,7 @@
 const button= document.querySelector('button')
 
 const size=4316534*8
-const testcase=1200;
+const testcase=1000;
 const progress= document.querySelector('.progress ')
 const speedtext=document.querySelector('.speed-text')
 let test_res=[]
