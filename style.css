@@ -113,6 +113,7 @@ button{
     border-radius: 3px;
     background-color: blue;
     font-weight: bold;
+    cursor:pointer;
     text-transform: uppercase;
     width: 60%;
     text-align: center;
